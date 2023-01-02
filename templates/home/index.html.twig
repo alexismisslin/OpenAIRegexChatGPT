@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h1>🦫 Père Castor, raconte nous une REGEX 🦫</h1>
+    <h1>🦫 Père Castor, raconte nous une REGEX 🦫</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.regex) }}
+        {{ form_row(form.submit) }}
+    {{ form_end(form) }}
 {% endblock %}
