@@ -1,6 +1,6 @@
 # Père Castor, raconte nous une REGEX
 
-Utilisation de CHAT GPT dans une App SYMFONY pour décrire une REGEX sous forme d'histoire.
+Utilisation de <strong>ChatGPT</strong> dans une application Symfony pour décrire une regex sous forme d'histoire.
 
 ## Dans ce projet, j'ai utilisé :
 
