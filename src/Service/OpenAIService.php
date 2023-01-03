@@ -18,6 +18,7 @@ class OpenAIService{
     /**
      * @param string $regex
      * @return string
+     * @throws \Exception
      */
     public function getHistory(string $regex): string{
         $openai_api_key = $this->parameterBag->get('OPENAI_API_KEY');

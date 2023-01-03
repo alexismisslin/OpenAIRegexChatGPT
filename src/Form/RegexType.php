@@ -16,11 +16,16 @@ class RegexType extends AbstractType
             ->add('regex', TextareaType::class, [
                 'label' => 'Votre REGEX',
                 'attr' => [
-                    'placeholder' => 'Ex: ex-(a?e)quo',
+                    'placeholder' => 'Ex: ab{3,5}',
+                    'class' => 'no-resize'
                 ]
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Valider'
+                'label' => 'Valider',
+                'attr' => [
+                    'hx-post' => '/', // faire une requête post sur l'url /
+                    'hx-target' => '#response', // le résultat de l'appel ajax sera affiché dans une div ayant pour id "response"
+                ]
             ])
         ;
     }
